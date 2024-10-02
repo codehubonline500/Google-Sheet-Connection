@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>Google Sheet Full-Screen View</title>
+</head>
+
+<body>
+    <header class="app-header">
+        <h1>Google Sheet Viewer</h1>
+    </header>
+
+    <main>
+        <div class="iframe-wrapper">
+            <iframe id="sheetIframe" src="https://docs.google.com/spreadsheets/d/e/2PACX-1vT0tgBuv7u3IWBz2y635iv0x1wPVK4QkP2m97EeQYQrkH8Q86gmHQEYW0b9cZNqH5inHSWFW9PMGall/pubhtml?widget=true&amp;headers=false"
+                class="sheet-iframe" allowfullscreen>
+                <p>Your browser does not support this feature. Please try another method to view the content.</p>
+            </iframe>
+        </div>
+        <div class="button-container">
+            <button class="action-button" id="reloadButton">Reload Sheet</button>
+            <button class="action-button" id="fullscreenButton">Full Screen</button>
+        </div>
+    </main>
+
+    <footer class="app-footer">
+        <p>Data provided by Google Sheets</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
